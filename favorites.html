@@ -10,6 +10,17 @@
         <meta name="author" content="Ben Oehlers">  
     
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+            function myFunction () {
+                var foo = document.getElementById("foo");
+                if (foo.innerHTML == "Click Me!") {
+                    foo.innerHTML="You Clicked Me!";
+                } else {
+                    foo.innerHTML="Click Me!"
+                }
+            }
+        </script>
     
     </head>
 
@@ -50,6 +61,8 @@
                 <td>Hanging out with Friends</td>
             </tr>
         </table>
+
+        <button id="foo" type="button" onclick="myFunction()">Click Me!</button>
 
     </body>
 </html>
